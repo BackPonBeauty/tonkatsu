@@ -8,18 +8,28 @@
 </head>
 <body class="bg-white text-gray-800 font-sans">
 
-  <!-- Header -->
-  <header class="bg-yellow-100 shadow-md p-4">
-    <div class="max-w-5xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-pink-700">とんかつ 〇〇亭</h1>
-      <nav class="space-x-4 text-sm hidden sm:block">
-        <a href="#menu" class="hover:text-pink-700">メニュー</a>
-        <a href="#about" class="hover:text-pink-700">こだわり</a>
-        <a href="#access" class="hover:text-pink-700">アクセス</a>
-        <a href="#contact" class="hover:text-pink-700">お問い合わせ</a>
-      </nav>
-    </div>
-  </header>
+<!-- Header -->
+<header class="bg-yellow-100 shadow-md p-4">
+  <div class="max-w-5xl mx-auto flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-pink-700">とんかつ さくら亭</h1>
+
+    <!-- Hamburger Button -->
+    <button id="menu-btn" class="sm:hidden text-pink-700 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
+           viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+    </button>
+
+    <!-- Menu Links -->
+    <nav id="menu" class="hidden sm:flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 text-sm sm:items-center mt-4 sm:mt-0">
+      <a href="#menu" class="hover:text-pink-700">メニュー</a>
+      <a href="#about" class="hover:text-pink-700">こだわり</a>
+      <a href="#access" class="hover:text-pink-700">アクセス</a>
+      <a href="#contact" class="hover:text-pink-700">お問い合わせ</a>
+    </nav>
+  </div>
+</header>
 
   <!-- Hero Section -->
 <section class="bg-cover bg-center h-[60vh] text-white flex items-center justify-center" 
@@ -80,6 +90,13 @@
   <footer class="bg-yellow-100 text-center p-4 mt-6">
     <p>© 2025 とんかつ 〇〇亭</p>
   </footer>
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const menu = document.getElementById('menu');
 
+  menuBtn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
 </body>
 </html>
