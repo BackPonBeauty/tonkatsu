@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>とんかつ さくら亭</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Header -->
+  <header class="bg-yellow-100 shadow-md p-4">
+    <div class="max-w-5xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-pink-700">とんかつ さくら亭</h1>
+      <nav class="space-x-4 text-sm hidden sm:block">
+        <a href="#menu" class="hover:text-pink-700">メニュー</a>
+        <a href="#about" class="hover:text-pink-700">こだわり</a>
+        <a href="#access" class="hover:text-pink-700">アクセス</a>
+        <a href="#contact" class="hover:text-pink-700">お問い合わせ</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+<section class="bg-cover bg-center h-[60vh] text-white flex items-center justify-center" 
+  style="background-image: url('https://www.marukome.co.jp/files/recipe/5125/64f990b3-3514-40d2-8b0f-1f1a0a0001f7.jpg?auto=format&fit=crop&w=1400&q=80');">
+  <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+    <h2 class="text-3xl sm:text-5xl font-bold mb-4">サクサク、とろける幸せ</h2>
+    <p class="text-lg sm:text-xl">極上のとんかつをご賞味ください。</p>
+  </div>
+</section>
+
+  <!-- Menu -->
+  <section id="menu" class="max-w-5xl mx-auto p-6">
+    <h3 class="text-2xl font-bold mb-4 border-b border-gray-300">メニュー</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="p-4 border rounded shadow-sm">
+        <h4 class="text-lg font-semibold">ロースかつ定食</h4>
+        <p>1,200円 - 柔らかジューシーなロースを贅沢に使用。</p>
+      </div>
+      <div class="p-4 border rounded shadow-sm">
+        <h4 class="text-lg font-semibold">ヒレかつ定食</h4>
+        <p>1,400円 - さっぱり上品な味わい。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="bg-gray-100 py-8">
+    <div class="max-w-4xl mx-auto px-6">
+      <h3 class="text-2xl font-bold mb-4">さくら亭のこだわり</h3>
+      <p>
+        国産豚肉、パン粉、揚げ油すべてにこだわり抜いた当店のとんかつは、外はサクサク、中はジューシー。お米やキャベツ、ソースも厳選素材を使用しています。
+      </p>
+    </div>
+  </section>
+
+  <!-- Access -->
+  <section id="access" class="max-w-4xl mx-auto p-6">
+    <h3 class="text-2xl font-bold mb-4">アクセス</h3>
+    <p>〒123-4567 東京都品川区とんかつ町1-2-3</p>
+    <p>JR○○駅より徒歩5分</p>
+    <iframe
+  src="https://maps.app.goo.gl/rqcgreRnU6bmwNRx6"
+  width="600"
+  height="450"
+  style="border:0;"
+  allowfullscreen=""
+  loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-pink-50 py-6">
+    <div class="max-w-4xl mx-auto px-6">
+      <h3 class="text-2xl font-bold mb-4">お問い合わせ</h3>
+      <form class="space-y-4">
+        <input type="text" placeholder="お名前" class="w-full p-2 border rounded">
+        <input type="email" placeholder="メールアドレス" class="w-full p-2 border rounded">
+        <textarea placeholder="メッセージ" rows="4" class="w-full p-2 border rounded"></textarea>
+        <button type="submit" class="bg-pink-600 text-white px-4 py-2 rounded hover:bg-pink-700">送信</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-yellow-100 text-center p-4 mt-6">
+    <p>© 2025 とんかつ さくら亭</p>
+  </footer>
+
+</body>
+</html>
